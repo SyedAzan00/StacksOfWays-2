@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StacksOfWays | Wayne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(180deg, #f4f6f9, #e3eaf2);
+            color: #1c1f23;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 70px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #164863;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #164863;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: #427d9d;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 140px 80px 100px;
+            text-align: center;
+        }
+
+        section h1, section h2 {
+            color: #164863;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #d9eafc, #ffffff);
+            border-radius: 20px;
+            margin-top: 60px;
+            padding: 80px 40px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        #home h1 {
+            font-size: 2.8rem;
+            color: #164863;
+        }
+
+        #home p strong {
+            color: #427d9d;
+        }
+
+        #services h3, #projects h3 {
+            color: #164863;
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: center;
+            background: #164863;
+            color: white;
+            padding: 30px;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        a {
+            color: #427d9d;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #164863;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 30px;
+            }
+            section {
+                padding: 120px 30px 60px;
+            }
+            #home h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* Card style for services/projects */
+        #services h3, #projects h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        #services p, #projects p {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        #services, #projects {
+            background: #f9fcff;
+            border-radius: 15px;
+            margin: 50px auto;
+            padding: 60px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        #contact {
+            background: linear-gradient(180deg, #f4f6f9, #d8e8f3);
+            padding: 100px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        #contact a {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StacksOfWays</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="stacksofways-logo.png.png" alt="StackOfWays Logo" height="400">
+        <br>
+        <br>
+        <br>
+        <h1>Welcome to StacksOfWays</h1>
+        <p>Hey, I'm <strong>Wayne</strong> — a passionate web developer building creative, modern, and smart digital experiences using AI and the latest web technologies.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a new web developer exploring the power of AI in development. I love creating clean, responsive, and user-friendly websites that represent businesses and brands perfectly. My goal is to combine creativity with smart technology for next-level web experiences.</p>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <h3>Web Design</h3>
+        <p>Modern and responsive web designs tailored to your business vision.</p>
+        <h3>AI Integration</h3>
+        <p>Smart tools and AI features that make your website more dynamic and efficient.</p>
+        <h3>Branding</h3>
+        <p>Helping brands stand out with creative layouts and strategic design choices.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio to showcase work and skills.</p>
+        <h3>Business Landing Page</h3>
+        <p>Professional landing page for a startup or service.</p>
+        <h3>AI-Powered Tool</h3>
+        <p>A small project demonstrating AI usage in web development.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:stacksofways@gmail.com">stacksofways@gmail.com</a></p>
+        <p>Instagram: <a href="https://youtu.be/xvFZjo5PgG0?list=PLFPKExhwqtJPvY5L9dvWO6iW8mZt7kTIh">@stacksofways</a></p>
+        <p>GitHub: <a href="https://youtu.be/xvFZjo5PgG0?list=PLFPKExhwqtJPvY5L9dvWO6iW8mZt7kTIh">github.com/StacksOfWays</a></p>
+
+        <p><strong>Don't Forget To Open Insta Link!</strong></p>
+    </section>
+
+    <footer>
+        © 2025 StacksOfWays | Built by Wayne with ❤️ & AI
+    </footer>
+</body>
+</html>
